@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Luxurious Roman', 'sans-serif';
+  font-family: 'Luxurious Roman', Georgia, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,7 @@ body {
   background: #010101;
   background: linear-gradient(225deg, #010101, #E2D8D8);
   text-align: center;
+  height: 10rem;
   width: 100vw;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -40,6 +41,11 @@ body {
   padding: 0.01rem;
   width: 50vw;
   text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /*.container-inner {
@@ -81,11 +87,11 @@ body {
   padding: 0.5rem;
   margin: 2rem;
   border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   border-color: none;
   width: 100%;
 }
@@ -219,8 +225,8 @@ body {
   width: 100%;
   max-width: 400px;
   height: 60px;
-  padding: 12px; /*200px ideal for mobile*/
-  font-size: 18px;
+  padding: 12px;
+  /*200pxidealformobile*/font-size: 18px;
   font-family: "Courier New", monospace;
   color: #000;
   background-color: #fff;
@@ -498,4 +504,8 @@ body {
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.space-line {
+  margin-bottom: 100px;
 }

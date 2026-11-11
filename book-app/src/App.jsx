@@ -15,12 +15,12 @@ function App() {
   useDebounce(() => setDebounceSearchTerm(Search), 1000, [Search])
 
   const BaseUrl = 'https://openlibrary.org/search.json?'
-  const Fetch = async (query='lord of the rings') => {
+  const Fetch = async (query='') => {
     setLoading(true)
     setBookList([])
     setError("")
     try {
-      const endpoint = query ? `${BaseUrl}title=${encodeURIComponent(query)}` : 'lord of the rings'
+      const endpoint = query ? `${BaseUrl}title=${encodeURIComponent(query)}` : `${BaseUrl}title=lord+of+the+rings`
       const response = await fetch(endpoint)
       console.log(response)
 
@@ -59,6 +59,7 @@ useEffect (() => {
     <h1>Search for your Favourite book!</h1>
     <Searchbar Search={Search} setSearch={setSearch}/>
     </div>
+    <div className='space-line'></div>
     <div className='container-inner'>
       {Loading ? (<div className="spinner">
                     <div></div>
